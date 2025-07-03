@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Guardian AI</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardian AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Guardian AI</h1>
+        <h2>Your Trusted Legal Assistant</h2>
+
+        <div id="chat-display" class="chat-box">
+            <div class="message bot-message">Bot: Hi! My name is Guardian AI, How can I help you?</div>
+        </div>
+
+        <div class="input-group">
+            <input type="text" id="user-message" placeholder="Ask about IPC sections or describe a crime...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+
+        <div id="complaint-form" class="complaint-form" style="display: none;">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Your Email">
+            <textarea id="complaint" placeholder="Describe your complaint..."></textarea>
+            <button onclick="registerComplaint()">Register Complaint</button>
+        </div>
+
+        <button onclick="toggleComplaintForm()">Register Complaint</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

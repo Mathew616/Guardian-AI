@@ -1,0 +1,100 @@
+body {
+    font-family: 'Roboto mono', monospace;
+    background: linear-gradient(to bottom, #f7f7f7, #eaeaea);
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 10px 0;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.chat-box {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.user-message {
+    color: #7393B3;
+}
+
+.bot-message {
+    color: #343434;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px 0 0 8px;
+}
+
+.input-group button {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: 1px solid #5cb85c;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+}
+
+.input-group button:hover {
+    background-color: #4cae4c;
+}
+
+.complaint-form {
+    margin-top: 20px;
+}
+
+.complaint-form input, .complaint-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.complaint-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d9534f;
+    color: #fff;
+    border: 1px solid #d43f3a;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.complaint-form button:hover {
+    background-color: #c9302c;
+}
